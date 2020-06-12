@@ -1,0 +1,8 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: express
+packageMetadata:
+  tags:
+  - kpt.dev/app=tundera-express-web
+  shortDescription: kpt express service tundera-express-web for web package

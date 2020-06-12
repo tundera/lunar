@@ -1,0 +1,33 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: nextjs
+packageMetadata:
+  shortDescription: sample description
+openAPI:
+  definitions:
+    io.k8s.cli.setters.replicas:
+      x-k8s-cli:
+        setter:
+          name: replicas
+          value: "3"
+    io.k8s.cli.setters.image-setter:
+      x-k8s-cli:
+        setter:
+          name: image-setter
+          value: us.gcr.io/tundera-276902/tundera-nextjs
+    io.k8s.cli.setters.tag-setter:
+      x-k8s-cli:
+        setter:
+          name: tag-setter
+          value: latest
+    io.k8s.cli.substitutions.image-tag:
+      x-k8s-cli:
+        substitution:
+          name: image-tag
+          pattern: ${image-setter}:${tag-setter}
+          values:
+          - marker: ${image-setter}
+            ref: '#/definitions/io.k8s.cli.setters.image-setter'
+          - marker: ${tag-setter}
+            ref: '#/definitions/io.k8s.cli.setters.tag-setter'

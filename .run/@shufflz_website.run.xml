@@ -1,0 +1,26 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="@shufflz/website" type="docker-deploy" factoryName="dockerfile" singleton="false" server-name="Docker (Fluid OSX)">
+    <deployment type="dockerfile">
+      <settings>
+        <option name="imageTag" value="tundra/website:latest" />
+        <option name="buildCliOptions" value="" />
+        <option name="command" value="yarn start:website" />
+        <option name="containerName" value="tundra-website" />
+        <option name="contextFolderPath" value="." />
+        <option name="entrypoint" value="" />
+        <option name="portBindings">
+          <list>
+            <DockerPortBindingImpl>
+              <option name="containerPort" value="9000" />
+              <option name="hostIp" value="127.0.0.1" />
+              <option name="hostPort" value="9000" />
+            </DockerPortBindingImpl>
+          </list>
+        </option>
+        <option name="commandLineOptions" value="--rm -d -i" />
+        <option name="sourceFilePath" value="website/Dockerfile" />
+      </settings>
+    </deployment>
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,23 @@
+For us to connect to Apollo Client, we'll need:
+
+- Protocol details for Queries and Mutations (HTTP):
+  - Uses secure protocol? ('https')
+  - Uses both insecure and secure protocols?
+  - HTTP method used ('GET' or 'POST')
+- Protocol details for Subscriptions (WebSockets):
+  - Uses secure protocol? ('wss')
+  - Uses both insecure and secure protocols?
+- CORS Settings
+  - What are the allowed origins?
+  - What are the allowed methods?
+  - What are the allowed headers? ('Content-Type', 'Authorization', etc.)
+  - Passes 'Access-Control-Allow-Credentials' header?
+- API connection details:
+  - Insecure connection:
+    - What's the host?
+    - Which port?
+  - Secure connection:
+    - What's the host?
+    - Which port?
+  - Authentication:
+    - Required for which operations?

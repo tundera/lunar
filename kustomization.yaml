@@ -1,0 +1,8 @@
+commonLabels:
+  app: tundera
+
+resources:
+  - containers/k8s/kustomize/base/tundera-deployment.yaml
+  - containers/k8s/kustomize/base/tundera-nextjs-nodeport.yaml
+  - containers/k8s/kustomize/base/tundera-website-nodeport.yaml
+  - containers/k8s/kustomize/base/tundera-caddy-web-ingress.yaml

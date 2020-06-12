@@ -1,0 +1,28 @@
+{{- if .Values.caddyingresscontroller.rbac.create }}
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRole
+metadata:
+  name: {{ .Values.name }}-role
+  namespace: {{ .Release.Namespace }}
+rules:
+  - apiGroups:
+      - ""
+      - "extensions"
+    resources:
+      - ingresses
+      - ingresses/status
+      - secrets
+    verbs: ["*"]
+  - apiGroups:
+      - ""
+    resources:
+      - services
+      - pods
+      - nodes
+      - routes
+      - extensions
+    verbs:
+      - list
+      - get
+      - watch
+{{- end }}

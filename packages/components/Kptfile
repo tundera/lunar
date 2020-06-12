@@ -1,0 +1,8 @@
+apiVersion: kpt.dev/v1alpha1
+kind: Kptfile
+metadata:
+  name: components
+packageMetadata:
+  tags:
+  - kpt.dev/app=tundera-components-web
+  shortDescription: kpt components library tundera-components-web for web package

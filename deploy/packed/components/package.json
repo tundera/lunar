@@ -1,0 +1,28 @@
+{
+  "name": "@shufflz/components-packed",
+  "version": "1.0.0-alpha",
+  "description": "",
+  "scripts": {
+    "build": "tsdx build",
+    "build-storybook": "build-storybook",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "start": "tsdx watch",
+    "storybook": "start-storybook -p 6006",
+    "test": "tsdx test --passWithNoTests",
+    "publish": "npm i --ignore-scripts "
+  },
+  "monopacker": {
+    "hash": "34d52834abfa8a0e3e9cc5ca6ff202accf988b4b5202a565be900f9f195caecc",
+    "version": "1",
+    "linked": {}
+  },
+  "dependencies": {
+    "env-cmd": "10.1.0",
+    "find-yarn-workspace-root": "1.2.1",
+    "husky": "^4.2.5",
+    "postinstall-postinstall": "2.1.0",
+    "tsdx": "0.13.2",
+    "typescript": "^3.8.3"
+  }
+}

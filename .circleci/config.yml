@@ -1,0 +1,72 @@
+version: 2.1
+orbs:
+  node: circleci/node@2.0.3
+  docker: circleci/docker@1.0.1
+  gcp-cli: circleci/gcp-cli@1.8.4
+  gcp-gcr: circleci/gcp-gcr@0.6.1
+jobs:
+  build-and-push-base-image:
+    machine:
+      docker_layer_caching: true
+    steps:
+      - checkout
+      - gcp-gcr/gcr-auth
+      - gcp-gcr/build-image:
+          image: tundera-base
+          dockerfile: Dockerfile
+          path: .
+          google-project-id: GOOGLE_PROJECT_ID
+          registry-url: $GCLOUD_REGISTRY_URL
+      - gcp-gcr/push-image:
+          image: tundera-base
+          registry-url: $GCLOUD_REGISTRY_URL
+
+  build-and-push-website:
+    machine:
+      docker_layer_caching: true
+    steps:
+      - checkout
+      - gcp-gcr/gcr-auth
+      - gcp-gcr/build-image:
+          image: tundera-website
+          dockerfile: website/Dockerfile
+          path: .
+          google-project-id: GOOGLE_PROJECT_ID
+          registry-url: $GCLOUD_REGISTRY_URL
+      - gcp-gcr/push-image:
+          image: tundera-website
+          registry-url: $GCLOUD_REGISTRY_URL
+
+  build-and-push-nextjs:
+    machine:
+      docker_layer_caching: true
+    steps:
+      - checkout
+      - gcp-gcr/gcr-auth
+      - gcp-gcr/build-image:
+          image: tundera-nextjs
+          dockerfile: apps/nextjs/Dockerfile
+          path: .
+          google-project-id: GOOGLE_PROJECT_ID
+          registry-url: $GCLOUD_REGISTRY_URL
+      - gcp-gcr/push-image:
+          image: tundera-nextjs
+          registry-url: $GCLOUD_REGISTRY_URL
+
+workflows:
+  build-and-push:
+    jobs:
+      - build-and-push-base-image:
+          context: tundera
+          filters:
+            branches:
+              only:
+                - master
+      - build-and-push-website:
+          context: tundera
+          requires:
+            - build-and-push-base-image
+      - build-and-push-nextjs:
+          context: tundera
+          requires:
+            - build-and-push-base-image

@@ -1,0 +1,38 @@
+{
+  "references": [
+    { "path": "services/express" },
+    { "path": "apps/nextjs" },
+    { "path": "packages/components" },
+    { "path": "website" }
+  ],
+  "compilerOptions": {
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "target": "ESNext",
+    "jsx": "preserve",
+    "isolatedModules": true,
+    "noEmit": true,
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ScriptHost",
+      "ESNext",
+      "ES2018.AsyncIterable"
+    ],
+    "importHelpers": true,
+    "baseUrl": ".",
+    "paths": {
+      "@shufflz/express": ["packages/express"],
+      "@shufflz/nextjs": ["apps/nextjs"],
+      "@shufflz/components": ["packages/components"],
+      "@shufflz/website": ["website"]
+    }
+  },
+  "files": [],
+  "exclude": ["node_modules"]
+}

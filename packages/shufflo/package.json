@@ -1,0 +1,83 @@
+{
+  "version": "1.0.0-alpha",
+  "license": "MIT",
+  "repository": "https://github.com/stackshuffle/shufflz/tree/master/packages/shufflo",
+  "keywords": [
+    "react",
+    "mui",
+    "material-ui",
+    "react-hook-form"
+  ],
+  "main": "dist/shufflo.cjs.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --passWithNoTests",
+    "lint": "tsdx lint",
+    "lint-fix": "tsdx lint --fix",
+    "prepare": "tsdx build",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "deploy": "npm run build-storybook && cd storybook-static && now --name react-hook-form-material-ui --prod"
+  },
+  "dependencies": {},
+  "peerDependencies": {
+    "@date-io/date-fns": "1.3.x",
+    "@material-ui/core": "> 4.7 <5",
+    "@material-ui/icons": "> 4.7 <5",
+    "@material-ui/pickers": "3.2.x",
+    "date-fns": "2.7.x",
+    "react": ">=16.8",
+    "react-hook-form": "> 5.x"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": false,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "@shufflz/shufflo",
+  "module": "dist/shufflo.esm.js",
+  "devDependencies": {
+    "@babel/core": "7.10.0",
+    "@date-io/date-fns": "^1.3.13",
+    "@material-ui/core": "^4.10.0",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/pickers": "^3.2.10",
+    "@storybook/addon-actions": "5.3.19",
+    "@storybook/addon-docs": "5.3.19",
+    "@storybook/addon-info": "5.3.19",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-links": "5.3.19",
+    "@storybook/addons": "5.3.19",
+    "@storybook/react": "5.3.19",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "babel-loader": "^8.1.0",
+    "date-fns": "2.14.0",
+    "husky": "^4.2.5",
+    "mutation-observer": "^1.0.3",
+    "react": "^16.13.1",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "react-dom": "^16.13.1",
+    "react-hook-form": "^5.7.2",
+    "react-is": "^16.13.1",
+    "ts-loader": "7.0.5",
+    "tsdx": "0.13.2",
+    "tslib": "2.0.0",
+    "typescript": "^3.9.3"
+  }
+}

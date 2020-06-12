@@ -1,0 +1,26 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="@shufflz/nextjs" type="docker-deploy" factoryName="dockerfile" singleton="false" server-name="Docker (Fluid OSX)">
+    <deployment type="dockerfile">
+      <settings>
+        <option name="imageTag" value="tundra/nextjs:latest" />
+        <option name="buildCliOptions" value="" />
+        <option name="command" value="" />
+        <option name="containerName" value="tundra-nextjs" />
+        <option name="contextFolderPath" value="." />
+        <option name="entrypoint" value="yarn start:nextjs" />
+        <option name="portBindings">
+          <list>
+            <DockerPortBindingImpl>
+              <option name="containerPort" value="3000" />
+              <option name="hostIp" value="127.0.0.1" />
+              <option name="hostPort" value="3000" />
+            </DockerPortBindingImpl>
+          </list>
+        </option>
+        <option name="commandLineOptions" value="--rm -d -i" />
+        <option name="sourceFilePath" value="deploy/nextjs/Dockerfile" />
+      </settings>
+    </deployment>
+    <method v="2" />
+  </configuration>
+</component>

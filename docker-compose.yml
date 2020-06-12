@@ -1,0 +1,62 @@
+version: '3'
+services:
+  nextjs:
+    container_name: nextjs
+    image: 'us.gcr.io/tundera/tundera-nextjs:latest'
+    expose:
+      - '3000'
+    env_file:
+      - apps/nextjs/.env
+    restart: always
+    volumes:
+      - /app/node_modules
+      - /app/packages/tundera/node_modules
+      - /app/packages/components/node_modules
+      - /app/packages/express/node_modules
+    # labels:
+    #   - 'virtual.host=localhost'
+    #   - 'virtual.port=3000'
+    #   - 'virtual.websockets'
+    #   - 'virtual.tls-email=/root/certs/localhost.pem /root/certs/localhost-key.pem'
+
+  website:
+    container_name: website
+    image: 'us.gcr.io/tundera/tundera-website:latest'
+    expose:
+      - '9000'
+    restart: always
+    volumes:
+      - /app/node_modules
+      - /app/packages/website/node_modules
+      - /app/packages/components/node_modules
+      - /app/packages/express/node_modules
+    # labels:
+    #   - 'virtual.host=localhost'
+    #   - 'virtual.port=9000'
+    #   - 'virtual.websockets'
+    #   - 'virtual.tls-email=/root/certs/localhost.pem /root/certs/localhost-key.pem'
+  # caddy-gen:
+  #   container_name: proxy-container
+  #   image: 'wemakeservices/caddy-gen:latest'
+  #   restart: always
+  #   volumes:
+  #     - /var/run/docker.sock:/tmp/docker.sock:ro # needs socket to read events
+  #     - ./certs/acme:/etc/caddy/acme # to save acme
+  #     - ./certs/ocsp:/etc/caddy/ocsp # to save certificates
+  #     - ./network/proxies/caddy/certs:/root/certs # to sync mkcert certificates to Caddy
+  #   ports:
+  #     - '80:2015'
+  #     - '443:2015'
+  #   depends_on:
+  #     - nextjs
+  #     - website
+  nginx:
+    container_name: nginx
+    image: 'johnstonpt/tundra-nginx:latest'
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    depends_on:
+      - nextjs
+      - website

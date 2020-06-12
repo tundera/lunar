@@ -1,0 +1,15 @@
+nextjs.localhost {
+  encode zstd gzip
+  file_server
+  reverse_proxy {
+    to localhost:3000
+  }
+}
+
+website.localhost {
+  encode zstd gzip
+  file_server
+  reverse_proxy {
+    to localhost:9001
+  }
+}

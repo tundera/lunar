@@ -1,0 +1,31 @@
+{
+  "name": "@shufflz/website-packed",
+  "version": "1.0.0-alpha",
+  "description": "",
+  "scripts": {
+    "clean": "npx gatsby clean",
+    "develop": "npx gatsby develop",
+    "build": "npx gatsby build",
+    "start": "npx gatsby serve",
+    "fab:start": "fab serve --port=8000 --env=production fab.zip",
+    "publish": "npm i --ignore-scripts "
+  },
+  "monopacker": {
+    "hash": "942012c8637cd11c466bb4259fc996c839144b225405ad8d7eefe60d63308082",
+    "version": "1",
+    "linked": {}
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+    "@mdx-js/mdx": "^1.6.1",
+    "@mdx-js/react": "^1.6.1",
+    "apollo-client": "^2.6.9",
+    "gatsby": "^2.21.21",
+    "gatsby-cli": "^2.12.15",
+    "gatsby-plugin-mdx": "^1.2.6",
+    "gatsby-theme-document": "1.0.9",
+    "postinstall-postinstall": "2.1.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}

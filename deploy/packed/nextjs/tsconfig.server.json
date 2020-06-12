@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "strict": true,
+    "isolatedModules": false,
+    "outDir": "dist",
+    "noEmit": false
+  },
+  "include": ["src/server/**/*.ts", "src/server/**/*.tsx"]
+}

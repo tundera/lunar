@@ -1,0 +1,34 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: tundera-nextjs-web-ingress
+  labels:
+    tundera.stackshuffle.io/app: tundera-nextjs-web
+  annotations:
+    kubernetes.io/ingress.class: caddy
+spec:
+  rules:
+    - host: tundera.stackshuffle.io
+      http:
+        paths:
+          - path: /*
+            backend:
+              serviceName: tundera-nextjs-web-nodeport
+              servicePort: 30001
+          - path: /nextjs
+            backend:
+              serviceName: tundera-nextjs-web-nodeport
+              servicePort: 30001
+          #
+          # - path: /*
+          #   backend:
+          #     serviceName: tundera-website-web-nodeport
+          #     servicePort: 30002
+          # - path: /nextjs
+          #   backend:
+          #     serviceName: tundera-nextjs-web-nodeport
+          #     servicePort: 30001
+          # - path: /website
+          #   backend:
+          #     serviceName: tundera-website-web-nodeport
+          #     servicePort: 30002

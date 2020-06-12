@@ -1,0 +1,1 @@
+# Monorepo documentation (GitHub Pages)

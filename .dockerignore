@@ -1,0 +1,16 @@
+**/.git
+.dockerignore
+**/node_modules
+
+.ultra.cache.json
+**/*.code-workspace
+**/*.yarn-error.log
+**/*.vscode
+
+**/cloud
+
+apps/nextjs/cloud
+
+.python-version
+.circleci/reference
+cloud

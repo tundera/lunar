@@ -1,0 +1,21 @@
+FROM mhart/alpine-node:13
+
+WORKDIR /app/website
+
+COPY package.json package.json
+COPY fab.zip fab.zip
+
+RUN yarn add @fab/cli
+RUN yarn fab:init -y
+RUN yarn build:fab
+
+RUN addgroup -S node && adduser -S node -G node
+USER node
+
+RUN printenv
+
+EXPOSE 8000
+
+ENTRYPOINT ["yarn", "fab:start"]
+
+###############################################################################

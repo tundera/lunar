@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "external": {
+      "env-cmd": "10.1.0",
+      "find-yarn-workspace-root": "1.2.1",
+      "husky": "^4.2.5",
+      "postinstall-postinstall": "2.1.0",
+      "tsdx": "0.13.2",
+      "typescript": "^3.8.3"
+    },
+    "internal": [],
+    "peer": {}
+  },
+  "graph": {
+    "@shufflz/components": {
+      "internal": {},
+      "external": {}
+    }
+  },
+  "integrity": "34d52834abfa8a0e3e9cc5ca6ff202accf988b4b5202a565be900f9f195caecc"
+}
