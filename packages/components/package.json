@@ -64,7 +64,7 @@
     "test": "tsdx test --passWithNoTests"
   },
   "preconstruct": {
-    "source":  "src/index.tsx"
+    "source": "src/index.tsx"
   },
   "typings": "dist/index.d.ts"
 }
