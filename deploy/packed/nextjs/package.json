@@ -51,7 +51,7 @@
     "@types/ws": "7.2.4",
     "@zeit/next-source-maps": "0.0.3",
     "apollo-client": "^2.6.9",
-    "apollo-server": "2.13.0",
+    "apollo-server": "2.14.2",
     "apollo-server-express": "2.13.0",
     "apollo-server-micro": "^2.13.0",
     "babel-plugin-macros": "2.8.0",
