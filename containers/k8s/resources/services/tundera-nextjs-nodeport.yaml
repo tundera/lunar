@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: tundera-nextjs-web-nodeport
   labels:
-    tundera.stackshuffle.io/app: tundera-nextjs-web
+    lunar.tundera.dev/app: tundera-nextjs-web
 spec:
   type: NodePort
   selector:

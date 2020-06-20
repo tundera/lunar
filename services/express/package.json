@@ -1,7 +1,7 @@
 {
-  "name": "@shufflz/express",
+  "name": "@lunar/express",
   "description": "GraphQL express gateway api",
-  "version": "1.0.0-alpha",
+  "version": "0.0.0",
   "author": "Philip Johnston <stackshuffle@gmail.com>",
   "dependencies": {
     "@babel/runtime": "^7.10.0",
@@ -50,7 +50,7 @@
     "source": "src/server/index.ts"
   },
   "private": true,
-  "repository": "https://github.com/stackshuffle/shufflz/tree/master/services/express",
+  "repository": "https://github.com/tundera/lunar/tree/master/services/express",
   "scripts": {
     "build": "node_modules/.bin/tsc --project tsconfig.json",
     "dev": "NODE_ENV=development CUSTOM_ENV=local nodemon server",

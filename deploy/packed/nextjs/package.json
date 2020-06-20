@@ -1,6 +1,6 @@
 {
   "name": "@shufflz/nextjs-packed",
-  "version": "1.0.0-alpha",
+  "version": "0.0.0",
   "description": "",
   "scripts": {
     "dev": "next",

@@ -4839,7 +4839,7 @@ caw@^2.0.1:
   integrity sha512-Cg8/ZSBEa8ZVY9HspcGUYaK63d/bN7rqS3CYCzEGUxuYv6UlmcjzDUz2fCFFHyTvUW5Pk0I+3hkA3iXlIj6guA==
   dependencies:
     get-proxy "^2.0.0"
-    isurl "^1.0.0-alpha5"
+    isurl "^0.0.05"
     tunnel-agent "^0.6.0"
     url-to-options "^1.0.1"
 
@@ -5823,17 +5823,17 @@ css-selector-tokenizer@^0.7.0:
     fastparse "^1.1.2"
     regexpu-core "^4.6.0"
 
-css-tree@1.0.0-alpha.37:
-  version "1.0.0-alpha.37"
-  resolved "https://registry.npmjs.org/css-tree/-/css-tree-1.0.0-alpha.37.tgz#98bebd62c4c1d9f960ec340cf9f7522e30709a22"
+css-tree@0.0.0.37:
+  version "0.0.0.37"
+  resolved "https://registry.npmjs.org/css-tree/-/css-tree-0.0.0.37.tgz#98bebd62c4c1d9f960ec340cf9f7522e30709a22"
   integrity sha512-DMxWJg0rnz7UgxKT0Q1HU/L9BeJI0M6ksor0OgqOnF+aRCDWg/N2641HmVyU9KVIu0OVVWOb2IpC9A+BJRnejg==
   dependencies:
     mdn-data "2.0.4"
     source-map "^0.6.1"
 
-css-tree@1.0.0-alpha.39:
-  version "1.0.0-alpha.39"
-  resolved "https://registry.npmjs.org/css-tree/-/css-tree-1.0.0-alpha.39.tgz#2bff3ffe1bb3f776cf7eefd91ee5cba77a149eeb"
+css-tree@0.0.0.39:
+  version "0.0.0.39"
+  resolved "https://registry.npmjs.org/css-tree/-/css-tree-0.0.0.39.tgz#2bff3ffe1bb3f776cf7eefd91ee5cba77a149eeb"
   integrity sha512-7UvkEYgBAHRG9Nt980lYxjsTrCyHFN53ky3wVsDkiMdVqylqRt+Zc+jm5qw7/qyOvN2dHSYtX0e4MbCCExSvnA==
   dependencies:
     mdn-data "2.0.6"
@@ -5942,7 +5942,7 @@ csso@^4.0.2:
   resolved "https://registry.npmjs.org/csso/-/csso-4.0.3.tgz#0d9985dc852c7cc2b2cacfbbe1079014d1a8e903"
   integrity sha512-NL3spysxUkcrOgnpsT4Xdl2aiEiBG6bXswAABQVHcMrfjjBisFOKwLDOmf4wf32aPdcJws1zds2B0Rg+jqMyHQ==
   dependencies:
-    css-tree "1.0.0-alpha.39"
+    css-tree "0.0.0.39"
 
 cssom@^0.4.4:
   version "0.4.4"
@@ -8604,7 +8604,7 @@ got@8.3.2, got@^8.3.1:
     get-stream "^3.0.0"
     into-stream "^3.1.0"
     is-retry-allowed "^1.1.0"
-    isurl "^1.0.0-alpha5"
+    isurl "^0.0.05"
     lowercase-keys "^1.0.0"
     mimic-response "^1.0.0"
     p-cancelable "^0.4.0"
@@ -10262,7 +10262,7 @@ istanbul-reports@^3.0.2:
     html-escaper "^2.0.0"
     istanbul-lib-report "^3.0.0"
 
-isurl@^1.0.0-alpha5:
+isurl@^0.0.05:
   version "1.0.0"
   resolved "https://registry.npmjs.org/isurl/-/isurl-1.0.0.tgz#b27f4f49f3cdaa3ea44a0a5b7f3462e6edc39d67"
   integrity sha512-1P/yWsxPlDtn7QeRD+ULKQPaIaN6yF368GZ2vDfv0AL0NwpStafjWCDDdn0k8wgFMWpVAqG7oJhxHnlud42i9w==
@@ -16100,7 +16100,7 @@ svgo@^1.0.0:
     coa "^2.0.2"
     css-select "^2.0.0"
     css-select-base-adapter "^0.1.1"
-    css-tree "1.0.0-alpha.37"
+    css-tree "0.0.0.37"
     csso "^4.0.2"
     js-yaml "^3.13.1"
     mkdirp "~0.5.1"

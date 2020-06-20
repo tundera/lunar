@@ -1,6 +1,6 @@
 {
   "name": "@shufflz/components",
-  "version": "1.0.0-alpha",
+  "version": "0.0.0",
   "author": "Philip Johnston",
   "dependencies": {
     "env-cmd": "10.1.0",
@@ -53,7 +53,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "repository": "https://github.com/stackshuffle/shufflz/tree/master/packages/components",
+  "repository": "https://github.com/tundera/lunar/tree/master/packages/components",
   "scripts": {
     "build": "tsdx build",
     "build-storybook": "build-storybook",
@@ -64,7 +64,7 @@
     "test": "tsdx test --passWithNoTests"
   },
   "preconstruct": {
-    "source":  "src/index.tsx"
+    "source": "src/index.tsx"
   },
   "typings": "dist/index.d.ts"
 }

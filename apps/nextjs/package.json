@@ -1,6 +1,6 @@
 {
   "name": "@shufflz/nextjs",
-  "version": "1.0.0-alpha",
+  "version": "0.0.0",
   "main": "dist/nextjs.cjs.js",
   "module": "dist/nextjs.esm.js",
   "dependencies": {
@@ -46,7 +46,6 @@
     "cheerio": "^1.0.0-rc.3",
     "cookie": "0.4.1",
     "cross-env": "7.0.2",
-    "date-fns": "2.14.0",
     "dotenv": "8.2.0",
     "dotenv-extended": "2.8.0",
     "dotenv-load": "2.0.0",
@@ -132,7 +131,7 @@
   "publishConfig": {
     "access": "restricted"
   },
-  "repository": "https://github.com/stackshuffle/shufflz/tree/master/apps/nextjs",
+  "repository": "https://github.com/tundera/lunar/tree/master/apps/nextjs",
   "scripts": {
     "dev": "NODE_OPTIONS=\"--inspect\" next",
     "build": "next build",

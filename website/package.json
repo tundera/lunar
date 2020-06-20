@@ -1,8 +1,8 @@
 {
-  "name": "@shufflz/website",
+  "name": "@lunar/website",
   "author": "Philip Johnston",
-  "repository": "https://github.com/stackshuffle/shufflz/tree/master/website",
-  "version": "1.0.0-alpha",
+  "repository": "https://github.com/tundera/lunar/tree/master/website",
+  "version": "0.0.0",
   "main": "dist/website.cjs.js",
   "module": "dist/website.esm.js",
   "license": "MIT",

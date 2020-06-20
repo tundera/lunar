@@ -1,7 +1,7 @@
 {
-  "name": "@shufflz/root",
-  "description": "Monorepo for all things shufflz",
-  "version": "1.0.0-alpha",
+  "name": "@lunar/root",
+  "description": "Monorepo for lunar tools",
+  "version": "0.0.0",
   "author": "Philip Johnston<stackshuffle@gmail.com>",
   "dependencies": {
     "@babel/preset-env": "^7.10.0",
@@ -45,6 +45,7 @@
     "load-json-file": "6.2.0",
     "monopacker": "^3.0.0-rc.0",
     "next": "^9.4.2",
+    "nexus": "^0.23.0",
     "np": "6.2.3",
     "npm-run-all": "^4.1.5",
     "patch-package": "6.2.2",
@@ -79,7 +80,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "https://github.com/stackshuffle/shufflz",
+  "repository": "https://github.com/tundera/lunar",
   "scripts": {
     "bootstrap": "yarn clean && yarn clean:website && yarn && lerna init && lerna bootstrap && yarn env:sync && yarn build && yarn repos:validate && yarn repos:pack",
     "env:sync:package": "sync-dotenv --env .env --samples .env.*",
