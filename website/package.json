@@ -10,11 +10,15 @@
     "clean": "gatsby clean",
     "develop": "gatsby develop",
     "build": "gatsby build",
+    "build:fab": "yarn build && yarn fab:build",
+    "fab:build": "fab build",
+    "fab:serve": "fab serve fab.zip",
     "start": "gatsby serve",
     "fab:start": "fab serve --port=8000 --env=production fab.zip"
   },
   "dependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+    "@fab/cli": "^1.0.0-rc.4",
     "@mdx-js/mdx": "^1.6.4",
     "@mdx-js/react": "^1.6.1",
     "apollo-client": "^2.6.9",

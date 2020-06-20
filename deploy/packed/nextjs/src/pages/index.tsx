@@ -1,35 +1,75 @@
 import React from 'react';
-import { NextPage } from 'next';
+
+import useSWR from 'swr';
 import Link from 'next/link';
-import Img from 'react-cool-img';
-import { useApolloClient } from '@apollo/client';
+import Image from 'react-cool-img';
+
+import { NextPage } from 'next';
+import { request } from 'graphql-request';
+import { Flex, Box, Styled } from 'theme-ui';
+import { Button } from '@material-ui/core';
+
+import ReactLogo from '../../public/images/react-logo.svg';
 
 const IndexPage: NextPage = () => {
-  const apolloClient = useApolloClient();
+  const url = 'https://countries.trevorblades.com/';
+
+  const CountriesFragment = `
+    {
+      countries {
+        code
+        languages {
+          name
+          native
+        }
+        emoji
+      }
+    }
+  `;
+
+  const { data, error, isValidating } = useSWR(
+    CountriesFragment,
+    (query) => request(url, query),
+    {
+      suspense: false,
+    }
+  );
 
   return (
-    <div style={{ textAlign: 'center' }}>
-      <h1>Circle CI Demo</h1>
+    <Flex css={{ flexDirection: 'column', alignItems: 'center' }}>
+      <Styled.h1>Monorepo Demo</Styled.h1>
       <h3>Index Page</h3>
-      <p>Built with GraphQL, Next.js, and Apollo</p>
-      <p>A Next.js demo app for pipeline testing and CI/CD integration</p>
-      <div>tundera</div>
-      <div>
-        <Img
-          style={{ backgroundColor: 'grey', width: '480px', height: 'auto' }}
-          src="https://www.gannett-cdn.com/presto/2020/01/26/USAT/80802abd-a62b-4420-8e15-ac4bd08c5929-2020-01-25_LeBron1.jpg?crop=2245,1688,x476,y589&width=2560"
-          alt="React Cool Img"
-        />
-      </div>
-      <div>
+      <Box>
+        {' '}
+        <p>A Next.js demo app d for pipeline testing and CI/CD integration</p>
+      </Box>
+      <Flex sx={{ paddingTop: 50, paddingBottom: 65 }}>
+        <Image width={400} src={ReactLogo} alt="React-Shimmer image" />
+      </Flex>
+      <Flex
+        sx={{
+          textAlign: 'center',
+          flexDirection: 'column',
+        }}
+      >
+        <Box sx={{ width: '100px' }}>
+          <Button variant="outlined" href="/api/swapi" disabled={isValidating}>
+            GOAT
+          </Button>
+        </Box>
+      </Flex>
+      <Flex>
         <Link href="/about">
           <a>About page</a>
         </Link>
-      </div>
-      <div>
+      </Flex>
+      <Flex>
         <a href="https://google.com">Google</a>
-      </div>
-    </div>
+      </Flex>
+      <Flex>
+        <a href="/api/swapi">Load External API Data</a>
+      </Flex>
+    </Flex>
   );
 };
 

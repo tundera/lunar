@@ -3,10 +3,11 @@ require('dotenv').config();
 const withPlugins = require('next-compose-plugins');
 const withBuildEnv = require('next-env');
 const withImages = require('next-images');
-const NextJsWebpackOverride = require('nextjs-webpack-override');
+const withSvgr = require('next-svgr');
 const withMDXPlugin = require('@next/mdx')({
   extension: /\.mdx?$/,
 });
+const withNextJsWebpackOverride = require('nextjs-webpack-override');
 
 const withPreconstruct = require('@preconstruct/next');
 const withSourceMaps = require('@zeit/next-source-maps');
@@ -23,10 +24,10 @@ const baseConfig = {
   compress: process.env.NODE_ENV === 'production',
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     config.plugins.push(
-      new NextJsWebpackOverride({
+      new withNextJsWebpackOverride({
         // any standard webpack options that are usually inaccessible
         ...webpackOverrides,
-      }),
+      })
     );
     return config;
   },
@@ -35,20 +36,23 @@ const baseConfig = {
   },
 };
 
-module.exports = withPreconstruct(withPlugins(
-  [
-    [withProgressBarPlugin, { profile: true }],
-    [withSourceMaps],
-    [withBundleAnalyzer],
+module.exports = withPreconstruct(
+  withPlugins(
     [
-      withMDXPlugin,
-      { pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'] },
+      [withProgressBarPlugin, { profile: true }],
+      [withSourceMaps],
+      [withBundleAnalyzer],
+      [
+        withMDXPlugin,
+        { pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'md', 'mdx'] },
+      ],
+      [withImages],
+      [withSvgr],
+      [withBuildEnv],
     ],
-    [withImages],
-    [withBuildEnv],
-  ],
-  baseConfig
-));
+    baseConfig
+  )
+);
 
 // module.exports = withPreconstruct(
 //   withProgressBarPlugin(

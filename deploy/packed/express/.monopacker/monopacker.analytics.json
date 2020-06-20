@@ -1,8 +1,8 @@
 {
   "dependencies": {
     "external": {
-      "@babel/runtime": "7.9.6",
-      "apollo-server-express": "2.13.0",
+      "@babel/runtime": "^7.10.0",
+      "apollo-server-express": "2.13.1",
       "dotenv": "8.2.0",
       "env-cmd": "10.1.0",
       "express": "4.17.1",
@@ -10,11 +10,11 @@
       "find-yarn-workspace-root": "1.2.1",
       "graphql": "15.0.0",
       "graphql-depth-limit": "1.1.0",
-      "graphql-query-complexity": "0.5.0",
+      "graphql-query-complexity": "0.6.0",
       "helmet": "3.22.0",
       "postinstall-postinstall": "2.1.0",
-      "typescript": "^3.8.3",
-      "uuid": "8.0.0",
+      "typescript": "^3.9.3",
+      "uuid": "8.1.0",
       "uuidv4": "^6.0.8",
       "validator": "13.0.0"
     },
@@ -27,5 +27,5 @@
       "external": {}
     }
   },
-  "integrity": "cd9dc0e4fa8b2af99d5cc745ed91ffa0df81f09cb89e3165a3d4ecbf3873e75a"
+  "integrity": "8c0bf7510741d623e842bbb22fc804007b86197e717a8e4a0ea3c0681a0d0819"
 }

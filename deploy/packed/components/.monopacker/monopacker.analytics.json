@@ -6,7 +6,7 @@
       "husky": "^4.2.5",
       "postinstall-postinstall": "2.1.0",
       "tsdx": "0.13.2",
-      "typescript": "^3.8.3"
+      "typescript": "^3.9.3"
     },
     "internal": [],
     "peer": {}
@@ -17,5 +17,5 @@
       "external": {}
     }
   },
-  "integrity": "34d52834abfa8a0e3e9cc5ca6ff202accf988b4b5202a565be900f9f195caecc"
+  "integrity": "cab636038442079ccde29ba1316d91a209671fe4436fce2b944865f432bcc5cf"
 }
