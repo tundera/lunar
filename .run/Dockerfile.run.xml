@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="@shufflz/nextjs" type="docker-deploy" factoryName="dockerfile" singleton="false" server-name="Docker (Fluid OSX)">
+  <configuration default="false" name="@lunar/nextjs" type="docker-deploy" factoryName="dockerfile" singleton="false" server-name="Docker (Fluid OSX)">
     <deployment type="dockerfile">
       <settings>
         <option name="imageTag" value="tundra/nextjs:latest" />

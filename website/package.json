@@ -18,7 +18,7 @@
     "@mdx-js/mdx": "^1.6.4",
     "@mdx-js/react": "^1.6.1",
     "apollo-client": "^2.6.9",
-    "gatsby": "^2.22.11",
+    "gatsby": "^2.23.6",
     "gatsby-cli": "^2.12.30",
     "gatsby-plugin-mdx": "^1.2.6",
     "gatsby-theme-document": "1.0.9",

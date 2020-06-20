@@ -3,29 +3,29 @@ services:
   web:
     container_name: web
     env_file:
-    - .env
+      - .env
     build:
-      context: ""
+      context: ''
       args:
         NODE_ENV: production
       dockerfile: Dockerfile.nextjs
     volumes:
-    - .:/app
-    - /app/node_modules
+      - .:/app
+      - /app/node_modules
     environment:
-    - VIRTUAL_HOST=shufflz.localhost
-    - VIRTUAL_PORT=443
+      - VIRTUAL_HOST=lunar.localhost
+      - VIRTUAL_PORT=443
   nginx-proxy:
     build:
       dockerfile: nginx/Dockerfile
       context: nginx
     container_name: nginx-proxy
     ports:
-    - '80:80'
-    - '443:443'
+      - '80:80'
+      - '443:443'
     volumes:
-    - /var/run/docker.sock:/tmp/docker.sock:ro
-    - ./nginx/certs:/etc/nginx/certs
-    - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - ./nginx/certs:/etc/nginx/certs
+      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
     depends_on:
-    - web
+      - web

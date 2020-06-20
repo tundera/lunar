@@ -91,7 +91,7 @@
     "peer": {}
   },
   "graph": {
-    "@shufflz/nextjs": {
+    "@lunar/nextjs": {
       "internal": {},
       "external": {}
     }

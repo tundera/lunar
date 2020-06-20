@@ -17,7 +17,7 @@
     "peer": {}
   },
   "graph": {
-    "@shufflz/website": {
+    "@lunar/website": {
       "internal": {},
       "external": {}
     }

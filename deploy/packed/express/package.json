@@ -1,5 +1,5 @@
 {
-  "name": "@shufflz/express-packed",
+  "name": "@lunar/express-packed",
   "version": "0.0.0",
   "description": "GraphQL express gateway api",
   "scripts": {

@@ -12,7 +12,7 @@
     "peer": {}
   },
   "graph": {
-    "@shufflz/components": {
+    "@lunar/components": {
       "internal": {},
       "external": {}
     }

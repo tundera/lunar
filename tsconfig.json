@@ -27,10 +27,10 @@
     "importHelpers": true,
     "baseUrl": ".",
     "paths": {
-      "@shufflz/express": ["packages/express"],
-      "@shufflz/nextjs": ["apps/nextjs"],
-      "@shufflz/components": ["packages/components"],
-      "@shufflz/website": ["website"]
+      "@lunar/express": ["packages/express"],
+      "@lunar/nextjs": ["apps/nextjs"],
+      "@lunar/components": ["packages/components"],
+      "@lunar/website": ["website"]
     }
   },
   "files": [],

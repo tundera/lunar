@@ -1,6 +1,6 @@
 ---
-'@shufflz/nextjs': minor
-'@shufflz/express': minor
+'@lunar/nextjs': minor
+'@lunar/express': minor
 ---
 
 Updated with configs

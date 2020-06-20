@@ -25,5 +25,5 @@ shell.exec(`TAG=${VERSION_TAG} yarn image:push:gcloud:nextjs`);
 shell.exec(`TAG=${VERSION_TAG} yarn image:push:gcloud:website`);
 
 shell.exec(
-    `TAG=${VERSION_TAG} envsubst < containers/k8s/resources/deployments/shufflz-nextjs-deployment.yaml | kubectl apply -f -`
+    `TAG=${VERSION_TAG} envsubst < containers/k8s/resources/deployments/lunar-nextjs-deployment.yaml | kubectl apply -f -`
 );

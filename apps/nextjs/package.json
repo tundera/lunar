@@ -1,5 +1,5 @@
 {
-  "name": "@shufflz/nextjs",
+  "name": "@lunar/nextjs",
   "version": "0.0.0",
   "main": "dist/nextjs.cjs.js",
   "module": "dist/nextjs.esm.js",
@@ -54,7 +54,7 @@
     "favicons-webpack-plugin": "^3.0.1",
     "find-yarn-workspace-root": "1.2.1",
     "fs-jetpack": "^2.3.0",
-    "gatsby": "^2.22.11",
+    "gatsby": "^2.23.6",
     "got": "^11.1.3",
     "gqless": "0.0.1-alpha.29",
     "graphql": "15.0.0",

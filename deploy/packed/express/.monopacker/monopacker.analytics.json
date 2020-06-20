@@ -22,7 +22,7 @@
     "peer": {}
   },
   "graph": {
-    "@shufflz/express": {
+    "@lunar/express": {
       "internal": {},
       "external": {}
     }
