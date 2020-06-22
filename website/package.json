@@ -2,7 +2,7 @@
     "name": "@lunar/website",
     "author": "Philip Johnston",
     "repository": "https://github.com/tundera/lunar/tree/master/website",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "main": "dist/website.cjs.js",
     "module": "dist/website.esm.js",
     "license": "MIT",

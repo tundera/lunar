@@ -25,5 +25,5 @@ FROM mhart/alpine-node:slim-13
 WORKDIR /app
 COPY --from=builder /app/dist ./dist
 
-ENTRYPOINT [ "node", "-r", "dotenv-flow/config", "dist/express.cjs.prod.js" ]
+ENTRYPOINT [ "node", "-r", "dotenv-flow/config", "dist/server.cjs.prod.js" ]
 

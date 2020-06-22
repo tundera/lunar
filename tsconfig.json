@@ -1,6 +1,6 @@
 {
   "references": [
-    { "path": "services/express" },
+    { "path": "services/server" },
     { "path": "apps/nextjs" },
     { "path": "packages/components" },
     { "path": "website" }
@@ -27,7 +27,7 @@
     "importHelpers": true,
     "baseUrl": ".",
     "paths": {
-      "@lunar/express": ["packages/express"],
+      "@lunar/server": ["services/server"],
       "@lunar/nextjs": ["apps/nextjs"],
       "@lunar/components": ["packages/components"],
       "@lunar/website": ["website"]

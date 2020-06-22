@@ -1,6 +1,13 @@
 # @lunar/gatsby
 
-## 0.0.2
+## 0.0.3
+
 ### Patch Changes
 
-- Patch bump testing for gatsby
+-   patch bump adding a new project
+
+## 0.0.2
+
+### Patch Changes
+
+-   Patch bump testing for gatsby
