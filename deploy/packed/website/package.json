@@ -14,7 +14,7 @@
     "publish": "npm i --ignore-scripts "
   },
   "monopacker": {
-    "hash": "570fd9d57fa121c5b0e4d3b6594b13ac0fd89049b194cdda7167a1e131ba5c56",
+    "hash": "8a03cd303ba38b6f6a6c58ccf90c231e0e2c0fc8266f2eb4b1add6442d388ef7",
     "version": "1",
     "linked": {}
   },
@@ -24,10 +24,10 @@
     "@mdx-js/mdx": "^1.6.4",
     "@mdx-js/react": "^1.6.1",
     "apollo-client": "^2.6.9",
-    "gatsby": "^2.23.6",
-    "gatsby-cli": "^2.12.30",
+    "gatsby": "^2.23.7",
+    "gatsby-cli": "^2.12.48",
     "gatsby-plugin-mdx": "^1.2.6",
-    "gatsby-theme-document": "1.0.9",
+    "gatsby-theme-document": "1.0.10",
     "postinstall-postinstall": "2.1.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
