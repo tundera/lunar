@@ -54,7 +54,7 @@
       "gatsby": "^2.23.7",
       "got": "^11.1.3",
       "gqless": "0.0.1-alpha.29",
-      "graphql": "15.0.0",
+      "graphql": "^15.1.0",
       "graphql-iso-date": "3.6.1",
       "graphql-request": "^1.8.2",
       "graphql-tag": "2.10.3",
@@ -114,5 +114,5 @@
       "external": {}
     }
   },
-  "integrity": "74e2a7383b30471e868786470cd0e3e8eb36d32e3a9d3d367e845d3b7c44a822"
+  "integrity": "c666991e1070ced934a312ec7ff37ed07551aa93e203f16b5c20617c01da13fc"
 }

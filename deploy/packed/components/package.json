@@ -1,6 +1,6 @@
 {
   "name": "@lunar/components-packed",
-  "version": "0.0.0",
+  "version": "0.1.1",
   "description": "",
   "scripts": {
     "build": "tsdx build",
