@@ -86,7 +86,7 @@
     "env:sync:package": "sync-dotenv --env .env --samples .env.*",
     "env:sync:workspaces": "manypkg exec yarn sync-dotenv --env .env --samples \".env.*\"",
     "env:sync": "yarn env:sync:package && yarn env:sync:workspaces",
-    "build": "ultra --build packages:build",
+    "build": "ultra --build --concurrency 4 --stages -r \"yarn build\"",
     "build:all": "manypkg exec yarn build",
     "build:website": "manypkg run website build",
     "build:express": "manypkg run express build",
