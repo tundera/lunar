@@ -3,7 +3,7 @@ import { NextPage, GetServerSideProps } from 'next';
 import Link from 'next/link';
 import gql from 'graphql-tag';
 
-import CountryMessage from '../components/CountryMessage';
+import Button from '../components/Button';
 
 const GET_COUNTRY_INFO = gql`
   query countries($code: ID!) {
@@ -28,8 +28,8 @@ const AboutPage: NextPage = () => (
       </Link>
     </div>
     {process.browser ? (
-      <Suspense fallback={<span>Loading country data...</span>}>
-        <CountryMessage />
+      <Suspense fallback={<span>Loading button data...</span>}>
+        <Button />
       </Suspense>
     ) : null}
   </div>

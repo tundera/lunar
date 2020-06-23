@@ -4,7 +4,7 @@
   "author": "Philip Johnston",
   "dependencies": {
     "env-cmd": "10.1.0",
-    "find-yarn-workspace-root": "1.2.1",
+    "find-yarn-workspace-root": "2.0.0",
     "husky": "^4.2.5",
     "postinstall-postinstall": "2.1.0",
     "tsdx": "0.13.2",
@@ -18,7 +18,7 @@
     "@storybook/addon-links": "5.3.19",
     "@storybook/addons": "5.3.19",
     "@storybook/react": "5.3.19",
-    "@types/jest": "25.2.3",
+    "@types/jest": "26.0.0",
     "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
     "babel-loader": "^8.1.0",
