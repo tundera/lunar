@@ -5,7 +5,7 @@
   "author": "Philip Johnston <stackshuffle@gmail.com>",
   "dependencies": {
     "@babel/runtime": "^7.10.0",
-    "apollo-server-express": "2.13.1",
+    "apollo-server-express": "2.15.0",
     "dotenv": "8.2.0",
     "env-cmd": "10.1.0",
     "express": "4.17.1",
