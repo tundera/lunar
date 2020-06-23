@@ -19,9 +19,9 @@ const GET_COUNTRY_INFO = gql`
 
 const AboutPage: NextPage = () => (
   <div style={{ textAlign: 'center' }}>
-    <h1>Monorepo Demo</h1>
+    <h1>SSG Demo</h1>
     <h3>About Page</h3>
-    <p>A Next.js demo app for pipeline testing and CI/CD integration</p>
+    <p>A Next.js demo app</p>
     <div style={{ padding: '2vh 2vw' }}>
       <Link href="/">
         <a>Index page</a>

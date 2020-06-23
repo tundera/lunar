@@ -2,14 +2,14 @@ import React from 'react';
 import { graphql } from '@gqless/react';
 import { Button, useColorMode } from 'theme-ui';
 
-import { query } from '../graphql/gqless';
+import { query } from '../graphql';
 
 interface Props {}
 
 const CountryMessage: React.FC<Props> = graphql(() => {
   const [colorMode, setColorMode] = useColorMode();
 
-  const data = query.country({ code: 'US' });
+  const data = query;
   return (
     <div>
       <div>

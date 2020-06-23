@@ -10,11 +10,11 @@ export default async (contentUrl: string) => {
     const beeMovieText = $('body.parallax pre').text();
     jetpack.write('bee-movie-script.txt', beeMovieText);
 
-    const movieWords = beeMovieText
-      .split(' ')
-      .filter((word: string) => word.length > 0);
+    const movieLines = beeMovieText
+      .split('\n')
+      .filter((line: string) => line.length > 0);
 
-    return movieWords;
+    return movieLines;
   } catch (err) {
     console.log(err);
   }
