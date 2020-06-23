@@ -1,5 +1,8 @@
 {
   "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "name": "gatsby",
   "version": "1.0.0",
   "dependencies": {
