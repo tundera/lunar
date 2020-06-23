@@ -1,4 +1,4 @@
-FROM johnstonpt/shufflz:latest AS base
+FROM johnstonpt/lunar:latest AS base
 
 ARG NODE_ENV
 ARG PORT

@@ -1,32 +1,37 @@
 {
-  "name": "@shufflz/website",
-  "author": "Philip Johnston",
-  "repository": "https://github.com/stackshuffle/shufflz/tree/master/website",
-  "version": "1.0.0-alpha",
-  "main": "dist/website.cjs.js",
-  "module": "dist/website.esm.js",
-  "license": "MIT",
-  "scripts": {
-    "clean": "gatsby clean",
-    "develop": "gatsby develop",
-    "build": "gatsby build",
-    "start": "gatsby serve",
-    "fab:start": "fab serve --port=8000 --env=production fab.zip"
-  },
-  "dependencies": {
-    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
-    "@mdx-js/mdx": "^1.6.4",
-    "@mdx-js/react": "^1.6.1",
-    "apollo-client": "^2.6.9",
-    "gatsby": "^2.22.11",
-    "gatsby-cli": "^2.12.30",
-    "gatsby-plugin-mdx": "^1.2.6",
-    "gatsby-theme-document": "1.0.9",
-    "postinstall-postinstall": "2.1.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "preconstruct": {
-    "source": "gatsby-config.js"
-  }
+    "name": "@lunar/website",
+    "author": "Philip Johnston",
+    "repository": "https://github.com/tundera/lunar/tree/master/website",
+    "version": "0.2.0",
+    "main": "dist/website.cjs.js",
+    "module": "dist/website.esm.js",
+    "license": "MIT",
+    "scripts": {
+        "clean": "gatsby clean",
+        "develop": "gatsby develop",
+        "build": "gatsby build",
+        "build:fab": "yarn build && yarn fab:build",
+        "fab:build": "fab build",
+        "fab:serve": "fab serve fab.zip",
+        "start": "gatsby serve",
+        "fab:start": "fab serve --port=8000 --env=production fab.zip"
+    },
+    "dependencies": {
+        "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
+        "@fab/cli": "^1.0.0-rc.4",
+        "@mdx-js/mdx": "^1.6.4",
+        "@mdx-js/react": "^1.6.1",
+        "@vercel/node": "^1.7.1",
+        "apollo-client": "^2.6.9",
+        "gatsby": "^2.23.7",
+        "gatsby-cli": "^2.12.48",
+        "gatsby-plugin-mdx": "^1.2.6",
+        "gatsby-theme-document": "1.0.10",
+        "postinstall-postinstall": "2.1.0",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    },
+    "preconstruct": {
+        "source": "gatsby-config.js"
+    }
 }

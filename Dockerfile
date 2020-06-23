@@ -5,7 +5,6 @@ FROM node:13 AS base
 WORKDIR /app
 
 COPY package.json /app/
-COPY lerna.json /app/
 
 # Add all configs relevant to the build step
 COPY babel.config.js .
@@ -32,7 +31,6 @@ RUN yarn config set global-folder .cache/yarn/global
 
 # Install yarn packages
 RUN yarn --frozen-lockfile
-RUN npx lerna init && npx lerna bootstrap
 
 # Monorepo build
 RUN yarn build
@@ -47,7 +45,7 @@ WORKDIR /app
 COPY --from=builder /app/.caches .caches
 COPY --from=builder /app/node_modules node_modules
 COPY --from=builder /app/website website
-COPY --from=builder /app/services/express services/express
+COPY --from=builder /app/services/server services/server
 COPY --from=builder /app/apps/nextjs apps/nextjs
 COPY --from=builder /app/packages/components packages/components
 

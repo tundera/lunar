@@ -1,0 +1,35 @@
+{
+    "settings": {
+        "typescript.tsdk": "node_modules/typescript/lib"
+    },
+    "folders": [
+        {
+            "name": "✨ @lunar/root",
+            "path": "."
+        },
+        {
+            "name": "🚀 @lunar/gatsby",
+            "path": "apps/gatsby"
+        },
+        {
+            "name": "🚀 @lunar/nextjs",
+            "path": "apps/nextjs"
+        },
+        {
+            "name": "🚀 @lunar/nitro",
+            "path": "apps/nitro"
+        },
+        {
+            "name": "📦 @lunar/components",
+            "path": "packages/components"
+        },
+        {
+            "name": "@lunar/server",
+            "path": "services/server"
+        },
+        {
+            "name": "🚀 @lunar/website",
+            "path": "website"
+        }
+    ]
+}

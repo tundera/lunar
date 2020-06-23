@@ -1,5 +1,8 @@
 {
   "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
   "name": "gatsby",
   "version": "1.0.0",
   "dependencies": {
@@ -12,7 +15,7 @@
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
-    "@now/node": "^1.3.0"
+    "@vercel/node": "^1.3.0"
   },
   "scripts": {
     "dev": "gatsby develop",

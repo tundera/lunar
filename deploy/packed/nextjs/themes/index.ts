@@ -1,4 +1,10 @@
-export default {
+import { toTheme } from 'theme-ui-typography';
+import merge from 'lodash.merge';
+import fairyGates from 'typography-theme-fairy-gates';
+
+const typography = toTheme(fairyGates);
+
+export default merge(typography, {
   initialColorModeName: 'light',
   useColorSchemeMediaQuery: true,
   colors: {
@@ -27,7 +33,7 @@ export default {
       bg: 'background',
     },
     h1: {
-      fontSize: [4, 5, 6],
+      fontSize: [24, 32, 48],
       color: 'primary',
     },
     a: {
@@ -39,4 +45,4 @@ export default {
       },
     },
   },
-};
+});

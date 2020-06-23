@@ -1,6 +1,6 @@
 {
-  "name": "@shufflz/components-packed",
-  "version": "1.0.0-alpha",
+  "name": "@lunar/components-packed",
+  "version": "0.2.0",
   "description": "",
   "scripts": {
     "build": "tsdx build",
@@ -13,7 +13,7 @@
     "publish": "npm i --ignore-scripts "
   },
   "monopacker": {
-    "hash": "34d52834abfa8a0e3e9cc5ca6ff202accf988b4b5202a565be900f9f195caecc",
+    "hash": "a950595f586134960c50fea1cfb07394abb2cdf2a22e8fe529f85124f1212b2a",
     "version": "1",
     "linked": {}
   },
@@ -23,6 +23,6 @@
     "husky": "^4.2.5",
     "postinstall-postinstall": "2.1.0",
     "tsdx": "0.13.2",
-    "typescript": "^3.8.3"
+    "typescript": "^4.0.0-dev.20200620"
   }
 }

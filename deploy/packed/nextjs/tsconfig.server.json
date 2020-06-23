@@ -11,5 +11,5 @@
     "outDir": "dist",
     "noEmit": false
   },
-  "include": ["src/server/**/*.ts", "src/server/**/*.tsx"]
+  "include": ["src/pages/api/**/*.ts", "src/pages/api/**/*.tsx"]
 }

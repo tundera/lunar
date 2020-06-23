@@ -2,13 +2,15 @@
   "dependencies": {
     "external": {
       "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
-      "@mdx-js/mdx": "^1.6.1",
+      "@fab/cli": "^1.0.0-rc.4",
+      "@mdx-js/mdx": "^1.6.4",
       "@mdx-js/react": "^1.6.1",
+      "@vercel/node": "^1.7.1",
       "apollo-client": "^2.6.9",
-      "gatsby": "^2.21.21",
-      "gatsby-cli": "^2.12.15",
+      "gatsby": "^2.23.7",
+      "gatsby-cli": "^2.12.48",
       "gatsby-plugin-mdx": "^1.2.6",
-      "gatsby-theme-document": "1.0.9",
+      "gatsby-theme-document": "1.0.10",
       "postinstall-postinstall": "2.1.0",
       "react": "^16.13.1",
       "react-dom": "^16.13.1"
@@ -17,10 +19,10 @@
     "peer": {}
   },
   "graph": {
-    "@shufflz/website": {
+    "@lunar/website": {
       "internal": {},
       "external": {}
     }
   },
-  "integrity": "942012c8637cd11c466bb4259fc996c839144b225405ad8d7eefe60d63308082"
+  "integrity": "f79fc3cc15357f1a484909f5f64f0e960b8aaa1e76c8bb6ca4d29035ec3e7ff3"
 }
