@@ -16,7 +16,6 @@
       "@mdx-js/loader": "^1.6.1",
       "@next/bundle-analyzer": "9.4.4",
       "@next/mdx": "^9.3.6",
-      "@now/node": "^1.7.1",
       "@preconstruct/next": "^1.0.1",
       "@testing-library/react": "10.0.4",
       "@theme-ui/components": "^0.3.1",
@@ -115,5 +114,5 @@
       "external": {}
     }
   },
-  "integrity": "584bf119d0fec69a0bdc7d4a8ac4ae7303ed756a445367d307b079c074cee096"
+  "integrity": "9abc3a9a0bce0321b9a18cb9839ff0c7424b330c4bfd2cf4cdddc39fb4e4b108"
 }

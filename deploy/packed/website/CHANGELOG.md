@@ -1,5 +1,13 @@
 # @lunar/website
 
+## 0.2.0
+
+### Minor Changes
+
+-   minor bumps
+-   a1634be: Another minor bump
+-   968de4f: changes
+
 ## 0.1.1
 
 ### Patch Changes

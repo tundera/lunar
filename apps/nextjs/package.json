@@ -19,7 +19,6 @@
         "@mdx-js/loader": "^1.6.1",
         "@next/bundle-analyzer": "9.4.4",
         "@next/mdx": "^9.3.6",
-        "@now/node": "^1.7.1",
         "@preconstruct/next": "^1.0.1",
         "@testing-library/react": "10.0.4",
         "@theme-ui/components": "^0.3.1",
