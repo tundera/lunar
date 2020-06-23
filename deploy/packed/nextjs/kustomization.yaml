@@ -1,6 +1,0 @@
-commonLabels:
-  app: tundera
-resources:
-- deployment.yaml
-- service.yaml
-- ingress.yaml

@@ -1,8 +1,0 @@
-apiVersion: kpt.dev/v1alpha1
-kind: Kptfile
-metadata:
-    name: server
-packageMetadata:
-    tags:
-        - kpt.dev/app=tundera-server-web
-    shortDescription: kpt server service tundera-server-web for web package

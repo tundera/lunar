@@ -1,5 +1,0 @@
-{
-  "verbose": true,
-  "testRegex": "integration.test",
-  "testEnvironment": "node"
-}

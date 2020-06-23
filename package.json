@@ -2,6 +2,7 @@
   "name": "@lunar/root",
   "description": "Monorepo for lunar tools",
   "author": "Philip Johnston<stackshuffle@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "@babel/preset-env": "^7.10.0",
     "@babel/preset-react": "^7.9.4",
@@ -40,7 +41,6 @@
     "gatsby-cli": "^2.12.48",
     "graceful-fs": "4.2.4",
     "jest": "26.0.1",
-    "lerna": "^3.21.0",
     "load-json-file": "6.2.0",
     "monopacker": "^3.0.0-rc.0",
     "next": "9.4.4",
@@ -62,8 +62,6 @@
     "wsrun": "^5.2.1",
     "yarn-or-npm": "^3.0.1"
   },
-  "license": "MIT",
-  "main": "index.js",
   "np": {
     "yarn": true,
     "contents": "dist"
@@ -99,7 +97,7 @@
     "changeset": "changeset",
     "check": "manypkg check",
     "clean": "ultra -b clean:packages",
-    "clean:packages": "manypkg exec rm -rf node_modules && manypkg exec rm -rf dist && rm -rf .ultra.cache.json && rm -rf node_modules",
+    "clean:packages": "manypkg exec rm -rf node_modules && manypkg exec rm -rf dist && rm .ultra.cache.json && rm -rf node_modules",
     "compose:packages:build": "docker-compose -f docker-compose.yml -f docker-compose-dev.yml build",
     "compose:packages:up": "docker-compose -f docker-compose.yml -f docker-compose-dev.yml up",
     "envinfo": "envinfo",
@@ -162,31 +160,21 @@
     "semantic-release": "semantic-release",
     "caddy:start": "node network/scripts/start-https-proxy.js",
     "print-env-ci": "yarn node scripts/build/print-env-ci.js",
-    "repos:analyze": "yarn repos:analyze:nextjs && yarn repos:analyze:nitro && yarn repos:analyze:website && yarn repos:analyze:server && yarn repos:analyze:components",
-    "repos:validate": "yarn repos:validate:nextjs && yarn repos:validate:nitro && yarn repos:validate:website && yarn repos:validate:server && yarn repos:validate:components",
-    "repos:pack": "yarn repos:pack:nextjs && yarn repos:pack:nitro && yarn repos:pack:website && yarn repos:pack:server && yarn repos:pack:components",
-    "repos:validate:nextjs": "monopacker validate apps/nextjs",
-    "repos:validate:nitro": "monopacker validate apps/nitro",
-    "repos:validate:website": "monopacker validate website",
-    "repos:validate:server": "monopacker validate services/server",
-    "repos:validate:components": "monopacker validate packages/components",
-    "repos:analyze:nextjs": "monopacker analyze apps/nextjs",
-    "repos:analyze:nitro": "monopacker analyze apps/nitro",
-    "repos:analyze:website": "monopacker analyze website",
-    "repos:analyze:server": "monopacker analyze services/server",
-    "repos:analyze:components": "monopacker analyze packages/components",
-    "repos:pack:nextjs": "monopacker pack apps/nextjs deploy/packed/nextjs",
-    "repos:pack:nitro": "monopacker pack apps/nitro deploy/packed/nitro",
-    "repos:pack:website": "monopacker pack website deploy/packed/website",
-    "repos:pack:server": "monopacker pack services/server deploy/packed/server",
-    "repos:pack:components": "monopacker pack packages/components deploy/packed/components",
     "gh:push": "yarn node -r dotenv/config scripts/github/commit-push-upstream.js"
   },
-  "workspaces": [
-    "packages/*",
-    "services/*",
-    "tools/*",
-    "apps/*",
-    "website"
-  ]
+  "workspaces": {
+    "packages": [
+      "packages/*",
+      "services/*",
+      "tools/*",
+      "apps/*",
+      "website"
+    ],
+    "nohoist": [
+      "apps/*",
+      "website",
+      "**/babel-loader",
+      "**/babel-jest"
+    ]
+  }
 }
