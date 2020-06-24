@@ -1,6 +1,6 @@
 import { NowRequest, NowResponse } from '@vercel/node';
 
-import getMovieWords from './getMovieWords';
+import getMovieWords from './getMovieLines';
 import sendMessage from './sendMessage';
 
 export default async (req: NowRequest, res: NowResponse) => {

@@ -54,7 +54,7 @@
     "start": "next start"
   },
   "preconstruct": {
-    "source": "next.config.js"
+    "source": "./next.config.js"
   },
   "repository": "https://github.com/tundera/lunar/tree/master/apps/nitro"
 }
