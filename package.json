@@ -165,13 +165,17 @@
   "workspaces": {
     "packages": [
       "packages/*",
+      "fullstack/*",
       "services/*",
+      "decks/*",
       "tools/*",
       "apps/*",
       "website"
     ],
     "nohoist": [
       "apps/*",
+      "fullstack/*",
+      "decks/*",
       "website",
       "**/babel-loader",
       "**/babel-jest"

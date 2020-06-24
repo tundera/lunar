@@ -1,0 +1,58 @@
+{
+  "name": "@lunar/sight",
+  "private": true,
+  "description": "themes with sight (based on Skin-UI editor)",
+  "main": "dist/sight.cjs.js",
+  "version": "0.0.1",
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.3",
+    "@mdx-js/mdx": "^1.6.4",
+    "@mdx-js/react": "^1.6.1",
+    "@theme-ui/color": "^0.3.1",
+    "@theme-ui/components": "0.3.1",
+    "apollo-boost": "^0.4.7",
+    "apollo-cache-inmemory": "^1.6.5",
+    "apollo-client": "^2.6.9",
+    "clipboard-copy": "^3.1.0",
+    "codemirror": "^5.52.0",
+    "faunadb": "^2.13.0",
+    "gatsby": "^2.23.7",
+    "gatsby-plugin-google-analytics": "^2.1.37",
+    "gatsby-plugin-google-fonts": "^1.0.1",
+    "gatsby-plugin-mdx": "^1.2.6",
+    "gatsby-plugin-react-helmet": "^3.3.4",
+    "graphql": "^15.1.0",
+    "isomorphic-fetch": "^2.2.1",
+    "netlify-identity-widget": "^1.5.6",
+    "object-key-validator": "^1.1.2",
+    "prop-types": "^15.7.2",
+    "query-string": "^6.11.1",
+    "react": "^16.13.1",
+    "react-codemirror": "^1.0.0",
+    "react-codemirror2": "^7.0.0",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0",
+    "react-visibility-sensor": "^5.1.1",
+    "theme-ui": "0.3.1",
+    "unique-names-generator": "^4.2.0"
+  },
+  "devDependencies": {
+    "netlify-lambda": "^1.6.3",
+    "prettier": "^2.0.5"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "postinstall": "netlify-lambda install"
+  },
+  "repository": "https://github.com/tundera/lunar/tree/master/decks/sight"
+}
