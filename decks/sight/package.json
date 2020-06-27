@@ -3,6 +3,7 @@
   "private": true,
   "description": "themes with sight (based on Skin-UI editor)",
   "main": "dist/sight.cjs.js",
+  "module": "dist/sight.esm.js",
   "version": "0.0.1",
   "dependencies": {
     "@apollo/react-hooks": "^3.1.3",
@@ -47,12 +48,15 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "format": "prettier --write \"**/*.{js,jsx,json,md,mdx}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
     "postinstall": "netlify-lambda install"
+  },
+  "preconstruct": {
+    "source": "gatsby-config.js"
   },
   "repository": "https://github.com/tundera/lunar/tree/master/decks/sight"
 }
