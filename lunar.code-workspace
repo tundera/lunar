@@ -20,11 +20,11 @@
             "path": "apps/nitro"
         },
         {
-            "name": "@lunar/sight",
+            "name": "🦁 @lunar/sight",
             "path": "decks/sight"
         },
         {
-            "name": "@lunar/blitz-app",
+            "name": "🦁 @lunar/blitz-app",
             "path": "fullstack/blitz-app"
         },
         {
@@ -32,7 +32,7 @@
             "path": "packages/components"
         },
         {
-            "name": "@lunar/server",
+            "name": "🦁 @lunar/server",
             "path": "services/server"
         },
         {
