@@ -1,5 +1,11 @@
 # @lunar/gatsby
 
+## 0.2.0
+
+### Minor Changes
+
+-   Added blitz app and build deps
+
 ## 0.1.0
 
 ### Minor Changes

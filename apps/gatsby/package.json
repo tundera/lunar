@@ -1,59 +1,59 @@
 {
-  "name": "@lunar/gatsby",
-  "private": true,
-  "publishConfig": {
-    "access": "public"
-  },
-  "description": "This project is an easy way to start developing fullstack apps with Gatsby and Apollo Server (using Netlify Lambda functions).",
-  "main": "dist/gatsby.cjs.js",
-  "module": "dist/gatsby.esm.js",
-  "version": "0.1.0",
-  "dependencies": {
-    "@apollo/client": "^3.0.0-rc.9",
-    "@graphql-tools/graphql-file-loader": "^6.0.11",
-    "@graphql-tools/load": "^6.0.11",
-    "@graphql-tools/schema": "^6.0.11",
-    "@theme-ui/presets": "^0.3.0",
-    "apollo-server-lambda": "^2.14.3",
-    "gatsby": "^2.23.7",
-    "gatsby-cli": "^2.12.48",
-    "gatsby-plugin-manifest": "^2.4.11",
-    "gatsby-plugin-offline": "^3.2.9",
-    "gatsby-plugin-react-helmet": "^3.3.4",
-    "gatsby-plugin-theme-ui": "^0.3.0",
-    "gatsby-theme-apollo": "^3.0.2",
-    "graphql": "^15.1.0",
-    "isomorphic-fetch": "^2.2.1",
-    "normalize.css": "^8.0.1",
-    "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-helmet": "^6.1.0",
-    "theme-ui": "0.3.1"
-  },
-  "devDependencies": {
-    "eslint-plugin-graphql": "^4.0.0",
-    "prettier": "^2.0.5"
-  },
-  "keywords": [
-    "gatsby",
-    "apollo",
-    "graphql",
-    "netlify",
-    "theme-ui"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "start": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx,ts,tsx,md,mdx,json,toml}",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "preconstruct": {
-    "source": "gatsby-config.js"
-  },
-  "repository": "https://github.com/tundera/lunar/tree/master/apps/gatsby",
-  "bugs": {
-    "url": "https://github.com/tudnera/lunar/tree/master/apps/gatsby/issues"
-  }
+    "name": "@lunar/gatsby",
+    "private": true,
+    "publishConfig": {
+        "access": "public"
+    },
+    "description": "This project is an easy way to start developing fullstack apps with Gatsby and Apollo Server (using Netlify Lambda functions).",
+    "main": "dist/gatsby.cjs.js",
+    "module": "dist/gatsby.esm.js",
+    "version": "0.2.0",
+    "dependencies": {
+        "@apollo/client": "^3.0.0-rc.9",
+        "@graphql-tools/graphql-file-loader": "^6.0.11",
+        "@graphql-tools/load": "^6.0.11",
+        "@graphql-tools/schema": "^6.0.11",
+        "@theme-ui/presets": "^0.3.0",
+        "apollo-server-lambda": "^2.14.3",
+        "gatsby": "^2.23.7",
+        "gatsby-cli": "^2.12.48",
+        "gatsby-plugin-manifest": "^2.4.11",
+        "gatsby-plugin-offline": "^3.2.9",
+        "gatsby-plugin-react-helmet": "^3.3.4",
+        "gatsby-plugin-theme-ui": "^0.3.0",
+        "gatsby-theme-apollo": "^3.0.2",
+        "graphql": "^15.1.0",
+        "isomorphic-fetch": "^2.2.1",
+        "normalize.css": "^8.0.1",
+        "prop-types": "^15.7.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "react-helmet": "^6.1.0",
+        "theme-ui": "0.3.1"
+    },
+    "devDependencies": {
+        "eslint-plugin-graphql": "^4.0.0",
+        "prettier": "^2.0.5"
+    },
+    "keywords": [
+        "gatsby",
+        "apollo",
+        "graphql",
+        "netlify",
+        "theme-ui"
+    ],
+    "license": "MIT",
+    "scripts": {
+        "build": "gatsby build",
+        "start": "gatsby develop",
+        "format": "prettier --write src/**/*.{js,jsx,ts,tsx,md,mdx,json,toml}",
+        "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    },
+    "preconstruct": {
+        "source": "gatsby-config.js"
+    },
+    "repository": "https://github.com/tundera/lunar/tree/master/apps/gatsby",
+    "bugs": {
+        "url": "https://github.com/tudnera/lunar/tree/master/apps/gatsby/issues"
+    }
 }

@@ -1,68 +1,68 @@
 {
-  "name": "@lunar/server",
-  "description": "GraphQL express gateway api",
-  "version": "0.2.0",
-  "author": "Philip Johnston <stackshuffle@gmail.com>",
-  "dependencies": {
-    "@babel/runtime": "^7.10.0",
-    "apollo-server-express": "2.15.0",
-    "dotenv": "8.2.0",
-    "env-cmd": "10.1.0",
-    "express": "4.17.1",
-    "express-rate-limit": "5.1.3",
-    "find-yarn-workspace-root": "2.0.0",
-    "graphql": "^15.1.0",
-    "graphql-depth-limit": "1.1.0",
-    "graphql-query-complexity": "0.6.0",
-    "helmet": "3.23.3",
-    "postinstall-postinstall": "2.1.0",
-    "typescript": "^4.0.0-dev.20200620",
-    "uuid": "8.2.0",
-    "uuidv4": "^6.0.8",
-    "validator": "13.1.1"
-  },
-  "devDependencies": {
-    "@types/express-rate-limit": "5.0.0",
-    "@types/graphql-depth-limit": "1.1.2",
-    "@types/helmet": "0.0.47",
-    "@types/jest": "26.0.3",
-    "@types/uuid": "8.0.0",
-    "@types/validator": "13.1.0",
-    "jest": "26.1.0",
-    "nodemon": "2.0.4",
-    "prettier": "^2.0.5",
-    "ts-node": "8.10.2"
-  },
-  "files": [
-    "dist"
-  ],
-  "keywords": [
-    "apollo-server",
-    "express",
-    "graphql",
-    "node",
-    "typescript"
-  ],
-  "license": "MIT",
-  "main": "dist/server.cjs.js",
-  "module": "dist/server.esm.js",
-  "preconstruct": {
-    "source": "src/server/index.ts"
-  },
-  "private": true,
-  "publishConfig": {
-    "access": "public"
-  },
-  "repository": "https://github.com/tundera/lunar/tree/master/services/server",
-  "scripts": {
-    "build": "node_modules/.bin/tsc --project tsconfig.json",
-    "dev": "NODE_ENV=development CUSTOM_ENV=local nodemon server",
-    "gen:schema": "node_modules/.bin/ts-node --project tsconfig.json server/lib/gen-sdl-schema.ts",
-    "serve": "yarn run build && NODE_ENV=production CUSTOM_ENV=staging node dist/server/index.js --expose-http2 ",
-    "start": "yarn run build && NODE_ENV=production CUSTOM_ENV=production node dist/server/index.js --expose-http2 ",
-    "test": "NODE_ENV=test CUSTOM_ENV=local jest",
-    "test:integration": "NODE_ENV=test CUSTOM_ENV=local jest --config tests/jest.integration.config.json",
-    "test:unit": "NODE_ENV=test CUSTOM_ENV=local jest --config tests/jest.unit.config.json",
-    "test:watch": "node_modules/.bin/jest --watch"
-  }
+    "name": "@lunar/server",
+    "description": "GraphQL express gateway api",
+    "version": "0.3.0",
+    "author": "Philip Johnston <stackshuffle@gmail.com>",
+    "dependencies": {
+        "@babel/runtime": "^7.10.0",
+        "apollo-server-express": "2.15.0",
+        "dotenv": "8.2.0",
+        "env-cmd": "10.1.0",
+        "express": "4.17.1",
+        "express-rate-limit": "5.1.3",
+        "find-yarn-workspace-root": "2.0.0",
+        "graphql": "^15.1.0",
+        "graphql-depth-limit": "1.1.0",
+        "graphql-query-complexity": "0.6.0",
+        "helmet": "3.23.3",
+        "postinstall-postinstall": "2.1.0",
+        "typescript": "^3.9.5",
+        "uuid": "8.2.0",
+        "uuidv4": "^6.0.8",
+        "validator": "13.1.1"
+    },
+    "devDependencies": {
+        "@types/express-rate-limit": "5.0.0",
+        "@types/graphql-depth-limit": "1.1.2",
+        "@types/helmet": "0.0.47",
+        "@types/jest": "26.0.3",
+        "@types/uuid": "8.0.0",
+        "@types/validator": "13.1.0",
+        "jest": "26.1.0",
+        "nodemon": "2.0.4",
+        "prettier": "^2.0.5",
+        "ts-node": "8.10.2"
+    },
+    "files": [
+        "dist"
+    ],
+    "keywords": [
+        "apollo-server",
+        "express",
+        "graphql",
+        "node",
+        "typescript"
+    ],
+    "license": "MIT",
+    "main": "dist/server.cjs.js",
+    "module": "dist/server.esm.js",
+    "preconstruct": {
+        "source": "src/server/index.ts"
+    },
+    "private": true,
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": "https://github.com/tundera/lunar/tree/master/services/server",
+    "scripts": {
+        "build": "node_modules/.bin/tsc --project tsconfig.json",
+        "dev": "NODE_ENV=development CUSTOM_ENV=local nodemon server",
+        "gen:schema": "node_modules/.bin/ts-node --project tsconfig.json server/lib/gen-sdl-schema.ts",
+        "serve": "yarn run build && NODE_ENV=production CUSTOM_ENV=staging node dist/server/index.js --expose-http2 ",
+        "start": "yarn run build && NODE_ENV=production CUSTOM_ENV=production node dist/server/index.js --expose-http2 ",
+        "test": "NODE_ENV=test CUSTOM_ENV=local jest",
+        "test:integration": "NODE_ENV=test CUSTOM_ENV=local jest --config tests/jest.integration.config.json",
+        "test:unit": "NODE_ENV=test CUSTOM_ENV=local jest --config tests/jest.unit.config.json",
+        "test:watch": "node_modules/.bin/jest --watch"
+    }
 }
