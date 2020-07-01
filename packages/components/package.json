@@ -73,8 +73,8 @@
   },
   "repository": "https://github.com/tundera/lunar/tree/master/packages/components",
   "scripts": {
-    "build": "tsdx build",
-    "build-storybook": "build-storybook",
+    "build": "tsdx build && yarn build:storybook && yarn build:federation",
+    "build:storybook": "build-storybook",
     "build:federation": "rm -rf storybook-static/federation && webpack --mode production",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
