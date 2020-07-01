@@ -96,7 +96,7 @@
         "serve": "11.3.2",
         "subscriptions-transport-ws": "0.9.16",
         "swr": "^0.2.2",
-        "theme-ui": "0.3.1",
+        "theme-ui": "^0.3.1",
         "theme-ui-typography": "^0.1.7",
         "ts-node": "8.10.2",
         "twilio": "^3.47.0",

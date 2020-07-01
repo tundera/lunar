@@ -22,7 +22,8 @@
     "baseUrl": "./",
     "paths": {
       "@": ["./"],
-      "*": ["src/*", "node_modules/*"]
+      "*": ["src/*", "node_modules/*"],
+      "components/*": ["src/*"]
     },
     "jsx": "react",
     "esModuleInterop": true

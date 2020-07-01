@@ -1,5 +1,4 @@
-import nightOwl from '@theme-ui/prism/presets/night-owl.json';
-import nightOwlLight from '@theme-ui/prism/presets/night-owl-light.json';
+import shadesOfPurple from '@theme-ui/prism/presets/shades-of-purple.json';
 import colors from './colors';
 import headings from './headings';
 
@@ -58,7 +57,7 @@ export default {
             },
         },
         pre: {
-            ...nightOwl,
+            ...shadesOfPurple,
             fontFamily: `"Operator Mono", monospace`,
             fontSize: '0.9rem',
             tabSize: 4,
