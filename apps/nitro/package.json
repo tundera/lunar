@@ -1,60 +1,60 @@
 {
-  "name": "@lunar/nitro",
-  "version": "0.1.0",
-  "main": "dist/nitro.cjs.js",
-  "module": "dist/nitro.esm.js",
-  "private": true,
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
-    "@material-ui/core": "4.10.2",
-    "@material-ui/icons": "4.9.1",
-    "@preconstruct/next": "^1.0.1",
-    "@zeit/next-typescript": "1.1.1",
-    "clsx": "1.1.1",
-    "dotenv": "8.2.0",
-    "dotenv-load": "2.0.0",
-    "gsap": "2.1.3",
-    "next": "9.4.4",
-    "next-compose-plugins": "2.2.0",
-    "next-env": "1.1.1",
-    "next-offline": "5.0.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "use-auth0": "0.5.1"
-  },
-  "devDependencies": {
-    "@types/dotenv": "8.2.0",
-    "@types/eslint": "6.8.1",
-    "@types/gsap": "1.20.2",
-    "@types/react-jss": "10.0.0",
-    "@types/styled-jsx": "2.2.8",
-    "@types/typescript": "2.0.0",
-    "@typescript-eslint/eslint-plugin": "3.4.0",
-    "@typescript-eslint/parser": "3.4.0",
-    "babel-eslint": "10.1.0",
-    "babel-plugin-module-resolver": "4.0.0",
-    "eslint": "7.3.1",
-    "eslint-config-airbnb": "18.2.0",
-    "eslint-config-prettier": "6.11.0",
-    "eslint-plugin-import": "2.21.2",
-    "eslint-plugin-jsx-a11y": "6.3.1",
-    "eslint-plugin-prettier": "3.1.4",
-    "eslint-plugin-react": "7.20.0",
-    "eslint-plugin-react-hooks": "2.5.1",
-    "prettier": "^2.0.5",
-    "prettier-eslint": "9.0.2",
-    "typescript": "^4.0.0-dev.20200620",
-    "webpack": "4.43.0"
-  },
-  "scripts": {
-    "dev": "NODE_OPTIONS=\"--inspect\" next",
-    "build": "next build",
-    "start": "next start"
-  },
-  "preconstruct": {
-    "source": "./next.config.js"
-  },
-  "repository": "https://github.com/tundera/lunar/tree/master/apps/nitro"
+    "name": "@lunar/nitro",
+    "version": "0.2.0",
+    "main": "dist/nitro.cjs.js",
+    "module": "dist/nitro.esm.js",
+    "private": true,
+    "publishConfig": {
+        "access": "public"
+    },
+    "dependencies": {
+        "@material-ui/core": "4.10.2",
+        "@material-ui/icons": "4.9.1",
+        "@preconstruct/next": "^1.0.1",
+        "@zeit/next-typescript": "1.1.1",
+        "clsx": "1.1.1",
+        "dotenv": "8.2.0",
+        "dotenv-load": "2.0.0",
+        "gsap": "3.3.4",
+        "next": "9.4.4",
+        "next-compose-plugins": "2.2.0",
+        "next-env": "1.1.1",
+        "next-offline": "5.0.2",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1",
+        "use-auth0": "0.5.1"
+    },
+    "devDependencies": {
+        "@types/dotenv": "8.2.0",
+        "@types/eslint": "7.2.0",
+        "@types/gsap": "1.20.2",
+        "@types/react-jss": "10.0.0",
+        "@types/styled-jsx": "2.2.8",
+        "@types/typescript": "2.0.0",
+        "@typescript-eslint/eslint-plugin": "3.4.0",
+        "@typescript-eslint/parser": "3.4.0",
+        "babel-eslint": "10.1.0",
+        "babel-plugin-module-resolver": "^4.0.0",
+        "eslint": "7.3.1",
+        "eslint-config-airbnb": "18.2.0",
+        "eslint-config-prettier": "6.11.0",
+        "eslint-plugin-import": "2.22.0",
+        "eslint-plugin-jsx-a11y": "6.3.1",
+        "eslint-plugin-prettier": "3.1.4",
+        "eslint-plugin-react": "7.20.1",
+        "eslint-plugin-react-hooks": "4.0.4",
+        "prettier": "^2.0.5",
+        "prettier-eslint": "11.0.0",
+        "typescript": "^4.0.0-dev.20200620",
+        "webpack": "^5.0.0-beta.20"
+    },
+    "scripts": {
+        "dev": "NODE_OPTIONS=\"--inspect\" next",
+        "build": "next build",
+        "start": "next start"
+    },
+    "preconstruct": {
+        "source": "./next.config.js"
+    },
+    "repository": "https://github.com/tundera/lunar/tree/master/apps/nitro"
 }
