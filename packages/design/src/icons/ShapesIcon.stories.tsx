@@ -1,5 +1,5 @@
 import React from "react";
-import { ShapesIcon } from "xolvio_ui/icons/ShapesIcon";
+import { ShapesIcon } from "ui_library/icons/ShapesIcon";
 
 export const Shapes = () => <ShapesIcon />;
 

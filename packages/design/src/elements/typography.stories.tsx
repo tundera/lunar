@@ -6,7 +6,7 @@ import {
   SectionHeaderSmall,
   Subheading,
   TextBody,
-} from "xolvio_ui/elements/typography";
+} from "ui_library/elements/typography";
 
 export default { title: "Elements/Typography" };
 

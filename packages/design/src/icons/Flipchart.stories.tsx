@@ -1,5 +1,5 @@
 import React from "react";
-import { FlipchartIcon } from "xolvio_ui/icons/FlipchartIcon";
+import { FlipchartIcon } from "ui_library/icons/FlipchartIcon";
 
 export const Flipchart = () => <FlipchartIcon />;
 

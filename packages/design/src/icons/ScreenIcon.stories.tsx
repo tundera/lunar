@@ -1,5 +1,5 @@
 import React from "react";
-import { ScreenIcon } from "xolvio_ui/icons/ScreenIcon";
+import { ScreenIcon } from "ui_library/icons/ScreenIcon";
 
 export const Screen = () => <ScreenIcon />;
 

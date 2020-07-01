@@ -1,7 +1,7 @@
 import React from "react";
 
 import "../index.css";
-import { Background } from "xolvio_ui/elements/Background";
+import { Background } from "ui_library/elements/Background";
 
 export default { title: "Elements/Background" };
 

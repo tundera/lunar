@@ -16,7 +16,7 @@
     "jsx": "react",
     "baseUrl": "",
     "paths": {
-      "xolvio_ui/*": ["src/*"]
+      "ui_library": ["src/*"]
     }
   },
   "include": ["src"]

@@ -10,7 +10,7 @@ module.exports = {
       {
         root: ["."],
         alias: {
-          xolvio_ui: "./src/",
+          components: "./src/",
         },
       },
     ],
