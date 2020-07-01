@@ -79,7 +79,7 @@
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "start": "tsdx watch",
-    "serve": "serve --listen 3030 --cors storybook-static",
+    "serve": "serve --listen 3030 --cors --ssl-cert .ssl/certs/localhost.crt --ssl-key .ssl/certs/localhost.key storybook-static",
     "storybook": "start-storybook -p 6006",
     "test": "tsdx test --passWithNoTests"
   },
