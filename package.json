@@ -4,9 +4,9 @@
   "author": "Philip Johnston<stackshuffle@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@babel/preset-env": "^7.10.0",
-    "@babel/preset-react": "^7.9.4",
-    "@babel/preset-typescript": "^7.9.0",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
     "@changesets/cli": "2.9.1",
     "@manypkg/cli": "^0.14.0",
     "@mdx-js/mdx": "^1.6.4",
