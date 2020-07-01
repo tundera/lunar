@@ -37,10 +37,11 @@
     "eslint-plugin-jest": "23.17.1",
     "eslint-plugin-markdown": "1.0.2",
     "eslint-plugin-prettier": "3.1.4",
-    "gatsby": "^2.23.7",
-    "gatsby-cli": "^2.12.48",
+    "gatsby": "^2.23.12",
+    "gatsby-cli": "^2.12.52",
     "graceful-fs": "4.2.4",
     "jest": "26.1.0",
+    "lerna": "^3.22.1",
     "load-json-file": "6.2.0",
     "monopacker": "^3.0.0-rc.0",
     "next": "9.4.4",
@@ -173,14 +174,6 @@
       "tools/*",
       "apps/*",
       "website"
-    ],
-    "nohoist": [
-      "apps/*",
-      "fullstack/*",
-      "decks/*",
-      "website",
-      "**/babel-loader",
-      "**/babel-jest"
     ]
   }
 }

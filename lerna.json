@@ -1,0 +1,14 @@
+{
+  "version": "independent",
+  "packages": [
+    "packages/*",
+    "fullstack/*",
+    "services/*",
+    "decks/*",
+    "tools/*",
+    "apps/*",
+    "website"
+  ],
+  "npmClient": "yarn",
+  "useWorkspaces": true
+}

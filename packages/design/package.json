@@ -1,0 +1,52 @@
+{
+  "name": "@lunar/design",
+  "version": "0.0.0",
+  "main": "dist/design.cjs.js",
+  "module": "dist/design.esm.js",
+  "dependencies": {
+    "@percy/storybook": "^3.3.0",
+    "@types/jest": "26.0.3",
+    "@types/node": "14.0.14",
+    "@types/react": "16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "@types/styled-components": "^5.0.1",
+    "file-loader": "^6.0.0",
+    "glob": "^7.1.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.0",
+    "typescript": "^4.0.0-dev.20200620"
+  },
+  "scripts": {
+    "start": "start-storybook -p 9009 -s public,assets",
+    "build": "yarn build:storybook",
+    "serve": "http-server ./storybook-static -p 3030 --cors",
+    "build:storybook": "build-storybook -s public,assets",
+    "snapshot": "yarn build:storybook && percy-storybook --widths=320,1280"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.8.0",
+    "@babel/compat-data": "7.8.0",
+    "@babel/core": "7.10.3",
+    "@babel/plugin-proposal-class-properties": "7.8.0",
+    "@babel/plugin-proposal-numeric-separator": "7.8.0",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@storybook/addon-actions": "5.3.19",
+    "@storybook/addon-links": "5.3.19",
+    "@storybook/addon-storysource": "^5.3.18",
+    "@storybook/addon-viewport": "^5.3.18",
+    "@storybook/addons": "5.3.19",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "5.3.19",
+    "babel-loader": "8.1.0",
+    "babel-plugin-module-resolver": "^4.0.0",
+    "css-loader": "^3.6.0",
+    "http-server": "^0.12.3",
+    "prettier": "^2.0.5",
+    "style-loader": "^1.2.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "repository": "https://github.com/tundera/lunar/tree/master/packages/design"
+}
