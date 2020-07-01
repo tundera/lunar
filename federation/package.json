@@ -1,0 +1,18 @@
+{
+  "name": "@federation/root",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sharing components between bundles",
+  "main": "index.js",
+  "repository": "https://github.com/tundera/lunar/master/tree/federation.git",
+  "author": "Philip Johnston",
+  "bolt": {
+    "workspaces": [
+      "about/*",
+      "admin/*",
+      "home/*",
+      "store/*"
+    ]
+  },
+  "license": "MIT"
+}
